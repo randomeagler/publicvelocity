@@ -1,0 +1,50 @@
+**SAVE THIS: INSTRUCTIONS TO MAKE EAGLERCRAFT SERVER**
+
+   Steps for the velocity server:
+
+              
+1. Go to render.com, sign in with email: pinetreetroop137@gmail.com. If you are not me, then make and account and/or sign in. Under "service name" there might be one that says "Bungeecord" if so go to step 3. If not continue to step two.
+
+2. Click "Add new" then "web service" then click the tab that says "git provider" if prompted, login in with github account email: tylermckinney589@gmail.com. If not me, then create/sign in to your own github account, and go to https://github.com/tylermckinney589/Bungeecord and click "Fork this repo" wait for it to fork and load. Then go back to render and click on repo that says "[YOUR GITHUB USERNAME]/Bungeecord". Don't change any settings at the top, the only one that needs changed is the "Instance type" click the one that says free. Then scroll down and click "Deploy Web Service".
+
+3. Now that the service is deployed, just wait for it to load in the "Build logs" section, and if done correctly, it will say the date and time followed by "Live" once it is done deploying. Now click on the URL underneath [YOUR GITHUB USERNAME]/Bungeecord" and if done correctly, it should start loading up the Eaglercraft WASM client. Now the velocity server is done!
+
+
+    Steps for the minecraft (paper) server:
+
+1. Go to panel.eternalzero.cloud, and sign in with tylermckinney589@gmail.com email, if you are not me, then create a new account/sign in.
+2. Now you should be on the dashboard. There should be a server called "OG WORLD SERVER". If so skip to step 4. If not continue to step 2.
+2. Click "Create Server" on the dashboard. Then click "Get free server" on "6GB PLAN CANADA". Then create it.
+3. Once loaded in, don't bother configuring
+
+(if you are making new server, then all you need to do is click "Versions" tab, then "Paper", then "1.12.2" click accept EULA, and install. Then add whatever plugins and stuff you want.)
+
+, just upload all of the files from the latest backup of the OG WORLD SERVER if it isn't there anymore. Then click the green "Start" button to start server. 
+
+4. **IMPORTANT If you are making a new server not using the OG WORLD SERVER that should already be there, then there is an essential step you must do to make the server work with velocity server. ** 
+
+Click the "Address" of your server to copy it to your clipboard. Go on github.com, and sign in using tylermckinney589@gmail.com, if you are not me, then make an account or sign in and go to the repo you forked while making your velocity server, and click on the "velocity" folder. Now click "velocity.toml", and click the pencil icon to switch to the editor. Now leave everything at the top alone, and scroll down to the "[servers]" section. There should be a line that says, lobby = "play2.eternalzero.cloud:27002". Change "play2.eternalzero.cloud:27002" to your server address that is copied on your clipboard. Now that that is changed, click "Commit Changes" and "Commit changes" again. Now go back to render, Click on your web service, click "Manual Deploy", "Deploy latest commit", and wait for it to deploy and say that it is live. Once it is loaded, you have your eaglercraft server created!
+
+Here is how to start up the server: Go to panel.eternalzero.cloud, click on your server and it will say "Service Suspened", but just click add 5 hours, refresh page, and click "start" button. Do this every time to start it up.
+To start up velocity server, go to dashboard.render.com, click on your web service, and click the link to your web service homepage. Wait for render to start application, and then click "Multiplayer", and the only server there should be your server. Click the server to play. 
+
+**IMPORTANT If trying to log in, you get: "Server error code 2. Invalid packet #7", then for some reason, your server doesn't allow you to have custom skins. To avoid this, just select a skin from the default list provided by eaglercraft, even the FNAW skins work. **
+
+Congrats! You now have a server and know how to start it! Technically everything else is optional, but VERY HIGHLY recommended, or else your game will disconnect every 15 minutes, and cause you to wait 1-2 minutes in loading time.
+
+   How to make velocity server not disconnect every 15 minutes.
+
+1. Go to https://fastcron.com, and click Sign up, or I guess sign in if you somehow already have an account. Follow the signup instructions, putting a random name if it asks for company name.
+2. Once all logged in, click on "+ Cron job". In the "URL to call" bar, put the address of your velocity server found inside of your render project. 
+3. The click the "Every Hour" dropdown menu, and click every 12 minutes.
+4. Then click the gray "Crontab" Button to customize when you want your server to be active, leave the minute section alone but feel free to customize the Hour, Month, and Weekday tabs, which are probably the only ones you should need to customize. Then click save changes, and you are done!
+
+   How to update the Eaglercraft version running off of render:
+
+1. Download the latest WEB version, not offline download, of eaglercraft WASM. (It should have an index.html, assets.epw, and a few other files.)
+2. Go to the forked github repo you have, go the velocity folder, the plugins, then eaglerweb/web. Delete the current files in there, commit the changes, and upload the new client files. 
+3. Go to your render web service, and click manual deploy, then deploy latest commit.
+That's it on updating the client version.
+
+
+Now your server is totally and completely done with Configuration! YOU HAVE AN EAGLERCRAFT SERVER!
