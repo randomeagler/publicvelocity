@@ -33,12 +33,12 @@ MyAnimation1:
 ServerName:
   change-interval: 1500
   texts:
-  - '&4&lDunder Mifflin'
-  - '&4Dunder Mifflin'
-  - '&4&lDunder Mifflin'
-  - '&4Dunder Mifflin'
-  - '&4&lDunder Mifflin'
-  - '&4Dunder Mifflin'
+  - '&4&lEaglerr'
+  - '&4Eagler'
+  - '&4&lEagler'
+  - '&4Eagler'
+  - '&4&lEagler'
+  - '&4Eagler'
 web:
   change-interval: 200
   texts:
@@ -107,4 +107,5 @@ barcolors:
     - RED
     - BLUE
     - GREEN
+
     - YELLOW
