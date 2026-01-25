@@ -1,6 +1,6 @@
 bind = "0.0.0.0:25566"
-welcome_message = "§4Welcome to Dunder Mifflin"
-action_bar = "§4Welcome to Dunder Mifflin"
+welcome_message = "Limbo"
+action_bar = "Limbo"
 default_game_mode = "spectator"
 hardcore = false
 fetch_player_skins = false
@@ -9,7 +9,7 @@ allow_unsupported_versions = false
 
 [forwarding]
 method = "BUNGEE_GUARD"
-tokens = ["jwwHMfQEFWt0"]
+tokens = ["token goes here"]
 
 [world]
 spawn_position = [
@@ -47,13 +47,13 @@ level = 6
 
 [tab_list]
 enabled = true
-header = "<bold>§4Welcome to Dunder Mifflin</bold>"
+header = "<bold>Limbo</bold>"
 footer = "<green>Enjoy your stay!</green>"
 player_listed = true
 
 [boss_bar]
 enabled = false
-title = "<bold>Welcome to Dunder Mifflin</bold>"
+title = "<bold>Limbo</bold>"
 health = 1.0
 color = "pink"
 division = 0
