@@ -2,4 +2,4 @@
 echo starting...
 ./pico_limbo &
 cd velocity
-java -Xmx1024M -Xms1024M -jar velocity.jar
+java -Xmx500M -Xms500M -jar velocity.jar
